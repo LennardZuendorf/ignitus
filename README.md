@@ -1,60 +1,57 @@
-[![Alpine](./.docs/public/social-card-preview.png)](https://alpine.nuxt.space)
+# Alpine Starter
 
-# Alpine
+Starter template for [Alpine](https://alpine.nuxt.space).
 
-[![npm version][npm-version-src]][npm-version-href]
-[![License][license-src]][license-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![Nuxt][nuxt-src]][nuxt-href]
-[![Nuxt Studio][nuxt-studio-src]][nuxt-studio-href]
-[![Volta][volta-src]][volta-href]
+## Clone
 
-The minimalist blog theme, powered by [Nuxt](https://nuxt.com).
-
-
-- [📸 Online demo](https://alpine.nuxt.space)
-- [⚡️ Play on StackBlitz](https://stackblitz.com/github/nuxt-themes/alpine-starter)
-
-## Features
-
-- Start from a **profile page**, scale to a **complete blog**!
-- An [open source blog theme](https://github.com/nuxt-themes/alpine) powered by [Nuxt Content](https://content.nuxtjs.org), editable from [Nuxt Studio](https://nuxt.studio).
-- Write pages in Markdown and Vue components with the [MDC syntax](https://content.nuxtjs.org/guide/writing/mdc).
-- Use [**30+ built-in**](https://elements.nuxt.space) components in your Markdown pages.
-
-## Quick Start
+Clone the repository (using `nuxi`):
 
 ```bash
-npx nuxi@latest init -t themes/alpine
+npx nuxi init -t themes/alpine
 ```
 
-## Contributing 🙏
+## Setup
 
-1. Clone this repository
-2. Install dependencies using `pnpm install`
-3. Run `pnpm prepare` to generate type stubs.
-4. Use `pnpm dev` to start [playground](./playground) in development mode.
+Install dependencies:
 
-## License
+```bash
+pnpm install
+```
 
-[MIT](./LICENSE)
+## Development
 
-<!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/@nuxt-themes/alpine/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-version-href]: https://npmjs.com/package/@nuxt-themes/alpine
+```bash
+pnpm dev
+```
 
-[npm-downloads-src]: https://img.shields.io/npm/dt/@nuxt-themes/alpine.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-downloads-href]: https://npmjs.com/package/@nuxt-themes/alpine
+## Edge Side Rendering
 
-[license-src]: https://img.shields.io/github/license/nuxt-themes/alpine.svg?style=flat&colorA=18181B&colorB=28CF8D
-[license-href]: https://github.com/nuxt-themes/alpine/blob/main/LICENSE
+Can be deployed to Vercel Functions, Netlify Functions, AWS, and most Node-compatible environments.
 
+Look at all the available presets [here](https://v3.nuxtjs.org/guide/deploy/presets).
 
-[nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?&logo=nuxt.js
-[nuxt-href]: https://nuxt.com
+```bash
+pnpm build
+```
 
-[nuxt-studio-src]: https://img.shields.io/badge/Open%20in%20Nuxt%20Studio-18181B?&logo=nuxt.js&logoColor=3BB5EC
-[nuxt-studio-href]: https://nuxt.studio/themes/alpine
+## Static Generation
 
-[volta-src]: https://user-images.githubusercontent.com/904724/209143798-32345f6c-3cf8-4e06-9659-f4ace4a6acde.svg
-[volta-href]: https://volta.net/nuxt-themes/alpine?utm_source=readme_alpine
+Use the `generate` command to build your application.
+
+The HTML files will be generated in the .output/public directory and ready to be deployed to any static compatible hosting.
+
+```bash
+pnpm generate
+```
+
+## Preview build
+
+You might want to preview the result of your build locally, to do so, run the following command:
+
+```bash
+pnpm preview
+```
+
+---
+
+For a detailed explanation of how things work, check out [Alpine](https://alpine.nuxt.space).
