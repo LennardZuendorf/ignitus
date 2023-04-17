@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "habitus.ignitr.com"
+        }
+      ],
+      "destination": "/projects/habitus"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": ".acme.com"
+        }
+      ],
+      "destination": "/projects/quaestio"
+  },
+  ]
+}
