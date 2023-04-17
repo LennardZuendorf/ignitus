@@ -7,6 +7,10 @@ Client: Nuxt.js (Vue)
 
 Hosting: Vercel
 
+<h2 align="left">🗳️ Status</h2>
+
+[![npm build action](https://github.com/LennardZuendorf/ignitus/actions/workflows/node.js.yml/badge.svg)](https://github.com/LennardZuendorf/ignitus/actions/workflows/node.js.yml)
+
 <h2 align="left">👨‍💻 Author</h2>
 
 - [@LennardZuendorf](https://github.com/LennardZuendorf)
