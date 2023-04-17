@@ -1,0 +1,77 @@
+{
+  "name": "@nuxt-themes/alpine",
+  "version": "1.5.0",
+  "type": "module",
+  "exports": "./nuxt.config.ts",
+  "files": [
+    "assets",
+    "components",
+    "composables",
+    "layouts",
+    "types",
+    "app.config.ts",
+    "app.vue",
+    "nuxt.config.ts",
+    "nuxt.schema.ts",
+    "tokens.config.ts"
+  ],
+  "scripts": {
+    "prepare": "nuxi prepare && nuxi prepare .docs",
+    "build": "nuxt build .docs",
+    "dev": "nuxt dev .docs",
+    "lint": "eslint .",
+    "generate": "nuxt generate .docs",
+    "preview": "nuxt preview .docs",
+    "prepublishOnly": "pnpm lint",
+    "release": "release-it"
+  },
+  "dependencies": {
+    "@nuxt-themes/elements": "^0.9.3",
+    "@nuxt-themes/tokens": "^1.9.0",
+    "@nuxt-themes/typography": "^0.10.0",
+    "@nuxt/content": "^2.5.2",
+    "@nuxthq/studio": "^0.8.5",
+    "@vueuse/core": "^9.13.0",
+    "ufo": "^1.1.1"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.1.1",
+    "@nuxtjs/plausible": "^0.2.0",
+    "eslint": "^8.36.0",
+    "nuxt": "^3.3.1",
+    "release-it": "^15.9.0",
+    "typescript": "^5.0.2",
+    "vue": "^3.2.47"
+  },
+  "release-it": {
+    "hooks": {
+      "before:init": [
+        "pnpm build"
+      ]
+    },
+    "git": {
+      "commitMessage": "chore(release): release v${version}"
+    },
+    "npm": {
+      "access": "public"
+    },
+    "github": {
+      "release": true,
+      "releaseName": "v${version}"
+    }
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "axios": "0.25.0",
+        "vue": "^3.0.0"
+      },
+      "ignoreMissing": [
+        "postcss",
+        "postcss-*",
+        "webpack",
+        "axios"
+      ]
+    }
+  }
+}
