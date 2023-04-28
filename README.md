@@ -11,7 +11,7 @@ Hosting: Vercel
 
 <h2 align="left">🗳️ Status</h2>
 
-[![npm build action](https://github.com/LennardZuendorf/ignitus/actions/workflows/node.js.yml/badge.svg)](https://github.com/LennardZuendorf/ignitus/actions/workflows/node.js.yml)
+[![nuxt site build](https://github.com/LennardZuendorf/ignitus/actions/workflows/nuxtjs.yml/badge.svg)](https://github.com/LennardZuendorf/ignitus/actions/workflows/nuxtjs.yml)
 
 <h2 align="left">👨‍💻 Author</h2>
 
