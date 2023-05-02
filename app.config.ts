@@ -41,7 +41,7 @@ export default defineAppConfig({
       linkedin: {
         icon: 'uil:linkedin',
         label: 'LinkedIn',
-        href: 'https://www.linkedin.com/in/lennardzuendorf'
+        href: 'https://www.linkedin.com/in/lennard-zuendorf/'
       }
     }
   }
