@@ -1,4 +1,4 @@
-![Logo](https://github.com/LennardZuendorf/ignitus/blob/main/public/apple-touch-icon.png)
+![Logo](https://github.com/LennardZuendorf/ignitus/blob/main/public/github/ignitr.png)
 
 <h1>Ignitus / ignitr.tech</h1>
 <h4>Ignitus is the repo for the ignitr.tech website, which showcases some of my personal tech projects. It's build on top of nuxt.js content mode and uses some nuxt themes.</h4>
