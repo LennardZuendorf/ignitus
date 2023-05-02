@@ -1,3 +1,4 @@
+// @ts-ignore
 export default defineAppConfig({
   alpine: {
     title: 'Ignitus',
