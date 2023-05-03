@@ -1,0 +1,10 @@
+---
+title: 'Notes'
+layout: 'page'
+---
+
+::articles-list
+---
+path: notes
+---
+::
