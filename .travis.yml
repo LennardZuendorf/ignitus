@@ -1,8 +1,16 @@
 language: node_js
 
+node_js:
+  - node
+
 install:
-- npm ci
+- npm install
+
+build:
+- npm run generate
 
 cache:
   directories:
   - "$HOME/.npm"
+  
+  
