@@ -1,16 +1,17 @@
+dist: xenial
+
 language: node_js
 
 node_js:
-  - node
+  - "lts/*"
+
+branches:
+  only:
+    - master
 
 install:
-- npm install
+  - npm install
 
-build:
-- npm run generate
-
-cache:
-  directories:
-  - "$HOME/.npm"
-  
-  
+script:
+  - npm run build
+  - npm run generate
