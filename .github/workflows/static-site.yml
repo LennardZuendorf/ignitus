@@ -2,7 +2,7 @@
 #
 # To get started with Nuxt see: https://nuxtjs.org/docs/get-started/installation
 #
-name: Deploy Nuxt site to Pages
+name: nuxt generate and deploy to gh pages
 
 on:
   # Runs on pushes targeting the default branch
