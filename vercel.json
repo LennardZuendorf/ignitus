@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "quaestio.ignitr.com"
+        }
+      ],
+      "destination": "/app/quaestio"
+    },
+  ]
+}
