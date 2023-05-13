@@ -31,6 +31,12 @@ module.exports = {
         sans: ['Inter', ...fontFamily.sans],
       },
       colors: {
+        'light-blue': '#4DC9E6',
+        'dark-blue': '#210CAE',
+        'light-yellow': '#FEF403',
+        'dark-yellow': '#FF7C02',
+        'accent-color-dark': '#F1B005',
+        'accent-color': '#3152C3',
         primary: colors.gray,
         gray: colors.neutral,
       },
@@ -40,9 +46,6 @@ module.exports = {
             color: theme('colors.gray.700'),
             a: {
               color: theme('colors.primary.500'),
-              '&:hover': {
-                color: `${theme('colors.primary.600')} !important`,
-              },
               code: { color: theme('colors.primary.400') },
             },
             h1: {
@@ -108,9 +111,6 @@ module.exports = {
             color: theme('colors.gray.300'),
             a: {
               color: theme('colors.primary.500'),
-              '&:hover': {
-                color: `${theme('colors.primary.400')} !important`,
-              },
               code: { color: theme('colors.primary.400') },
             },
             h1: {
