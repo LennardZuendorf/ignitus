@@ -128,9 +128,61 @@ export const Authors = defineDocumentType(() => ({
   },
   computedFields,
 }))
+export const LegalText = defineDocumentType(() => ({
+  name: 'LegalText',
+  filePathPattern: 'legal/**/*.mdx',
+  contentType: 'mdx',
+  fields: {
+    title: {
+      type: 'string',
+      required: true,
+    },
+    date: {
+      type: 'date',
+      required: true,
+    },
+    tags: {
+      type: 'list',
+      of: {
+        type: 'string',
+      },
+    },
+    lastmod: {
+      type: 'date',
+    },
+    draft: {
+      type: 'boolean',
+    },
+    summary: {
+      type: 'string',
+    },
+    images: {
+      type: 'list',
+      of: {
+        type: 'string',
+      },
+    },
+    authors: {
+      type: 'list',
+      of: {
+        type: 'string',
+      },
+    },
+    layout: {
+      type: 'string',
+    },
+    bibliography: {
+      type: 'string',
+    },
+    canonicalUrl: {
+      type: 'string',
+    },
+  },
+  computedFields,
+}))
 export default makeSource({
   contentDirPath: 'data',
-  documentTypes: [Blog, Authors],
+  documentTypes: [Blog, Authors, LegalText],
   mdx: {
     cwd: process.cwd(),
     remarkPlugins: [
