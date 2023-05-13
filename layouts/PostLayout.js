@@ -7,8 +7,6 @@ import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 const editUrl = (path) => `${siteMetadata.siteRepo}/blob/master/data/${path}`
-const discussUrl = (path) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(`${siteMetadata.siteUrl}/${path}`)}`
 const postDateTemplate = {
   weekday: 'long',
   year: 'numeric',

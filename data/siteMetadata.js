@@ -3,9 +3,9 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
   title: 'ignitr',
-  author: 'Lennard Zündorf',
+  author: 'Lennard',
+  description: 'Lennard Zuendorfs project and showcase portfolio website',
   headerTitle: 'ignitr',
-  description: 'to my simple project and showcase portfolio',
   language: 'en-us',
   theme: 'system',
   siteUrl: 'https://ignitr.tech',
