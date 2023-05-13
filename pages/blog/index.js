@@ -27,7 +27,7 @@ export default function BlogPage({ posts, initialDisplayPosts, pagination }) {
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title="All Posts"
+        title="List of all Notes"
       />
     </>
   )

@@ -43,7 +43,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
               <div className="prose max-w-none pb-8 pt-10 dark:prose-dark">{children}</div>
               <div className="pb-6 pt-6 text-sm text-gray-700 dark:text-gray-300">
                 {` • `}
-                <Link href={editUrl(filePath)}>View on GitHub</Link>
+                <Link href={editUrl(filePath)}>view this note on Github</Link>
               </div>
             </div>
             <footer>
@@ -91,7 +91,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                   className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                   aria-label="Back to the blog"
                 >
-                  &larr; Back to the blog
+                  &larr; back to all Notes
                 </Link>
               </div>
             </footer>

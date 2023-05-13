@@ -1,19 +1,22 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'habitus project',
+    description: `Showcase for a Java Spring backend, born out of a University Project. Personal training ground.`,
+    imgSrc: '/static/images/projects/habitus.png',
+    href: '/blog/habitus',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'quaestio',
+    description: `A beautifully designed game about deep questions. Build on Flutter with FlutterFlow. Still in Development.`,
+    imgSrc: '/static/images/projects/quaestio.jpg',
+    href: '/blog/quaestio',
+  },
+  {
+    title: 'twinkles',
+    description: `Idea for a modern dating app, with real location based dating. Build on Flutter with FlutterFlow.
+    Project currently paused.`,
+    imgSrc: '/static/images/projects/twinkles.jpg',
+    href: '/blog/twinkles',
   },
 ]
 export default projectsData
