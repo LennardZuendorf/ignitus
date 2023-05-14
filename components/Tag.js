@@ -1,11 +1,8 @@
-import Link from 'next/link'
 const Tag = ({ text }) => {
   return (
-    <Link
-      className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-accent-color dark:hover:text-accent-color-dark"
-    >
+    <p className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-accent-color dark:hover:text-accent-color-dark">
       {text.split(' ').join('-')}
-    </Link>
+    </p>
   )
 }
 export default Tag
