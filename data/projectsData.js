@@ -7,13 +7,13 @@ const projectsData = [
   },
   {
     title: 'quaestio',
-    description: `A beautifully designed game about deep questions. Build on Flutter with FlutterFlow. Still in Development.`,
+    description: `A beautifully designed game about deep questions. Built on Flutter with FlutterFlow. Still in Development.`,
     imgSrc: '/static/images/quaestio/intro.jpg',
     href: '/blog/quaestio',
   },
   {
     title: 'twinkles',
-    description: `Idea for a modern dating app, with real location based dating. Build on Flutter with FlutterFlow.
+    description: `Idea for a modern dating app, with real location based dating. Built on Flutter with FlutterFlow.
     Project currently paused.`,
     imgSrc: '/static/images/twinkles/intro.jpg',
     href: '/blog/twinkles',
