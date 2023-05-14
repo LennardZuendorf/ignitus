@@ -5,8 +5,7 @@ const experienceData = [
     location: 'Berlin, Germany',
     range: 'August 2022 - Februar 2023',
     url: 'https://hypoport.de',
-    text1:
-      'Product management within a software development project of a subsidiary company',
+    text1: 'Product management within a software development project of a subsidiary company',
     text2:
       'Work with a variety of different technologies, such as, JavaScript, React, Tailwind CSS, React-Query, Xstate, Dynamo DB, AWS services to name a few',
     text3:

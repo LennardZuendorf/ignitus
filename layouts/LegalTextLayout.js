@@ -1,24 +1,11 @@
-import { useState } from 'react'
 import Link from '@/components/Link'
-import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import { BlogSEO } from '@/components/SEO'
-import Image from '@/components/Image'
-import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
-const editUrl = (path) => `${siteMetadata.siteRepo}/blob/master/data/${path}`
-const postDateTemplate = {
-  weekday: 'long',
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-}
-export default function PostLayout({ content, authorDetails, next, prev, children }) {
-  const { filePath, path, slug, date, title, tags } = content
-  const basePath = path.split('/')[0]
+export default function PostLayout({ content, authorDetails, children }) {
   return (
     <SectionContainer>
-      <BlogSEO url={`${siteMetadata.siteUrl}/${path}`} authorDetails={authorDetails} {...content} />
+      <BlogSEO url={`${siteMetadata.siteUrl}/legal`} authorDetails={authorDetails} {...content} />
       <article>
         <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
           <div>

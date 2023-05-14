@@ -73,6 +73,7 @@ module.exports = () => {
         },
       ]
     },
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     webpack: (config, options) => {
       config.module.rules.push({
         test: /\.svg$/,
