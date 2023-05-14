@@ -16,7 +16,7 @@ const siteMetadata = {
   email: 'lennard@zuendorf.me',
   github: 'https://zuendorf.me/github',
   linkedin: 'https://zuendorf.me/linkd',
-  locale: 'de-DE',
+  locale: 'en-de',
   analytics: {
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
     simpleAnalytics: false, // true or false

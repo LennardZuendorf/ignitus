@@ -49,6 +49,12 @@ export const Blog = defineDocumentType(() => ({
       type: 'string',
       required: true,
     },
+    github: {
+      type: 'string',
+    },
+    website: {
+      type: 'string',
+    },
     date: {
       type: 'date',
       required: true,

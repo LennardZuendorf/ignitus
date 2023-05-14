@@ -1,9 +1,7 @@
-import { useState } from 'react'
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import { BlogSEO } from '@/components/SEO'
-import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 const editUrl = (path) => `${siteMetadata.siteRepo}/blob/master/data/${path}`
@@ -14,7 +12,7 @@ const postDateTemplate = {
   day: 'numeric',
 }
 export default function PostLayout({ content, authorDetails, next, prev, children }) {
-  const { filePath, path, slug, date, title, tags } = content
+  const { filePath, path, slug, date, title, tags, website, github } = content
   const basePath = path.split('/')[0]
   return (
     <SectionContainer>
@@ -60,6 +58,23 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                     </div>
                   </div>
                 )}
+                {(website || github) && (
+                  <div className="py-4 xl:py-8">
+                    <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                      Weblinks
+                    </h2>
+                    {website && (
+                      <h2 className="text-xl4 bg-gradient-to-r from-light-blue to-dark-blue bg-clip-text font-extrabold uppercase text-transparent dark:from-light-yellow dark:to-dark-yellow">
+                        <a href={website}>website</a>
+                      </h2>
+                    )}
+                    {github && (
+                      <h2 className="text-xl4 bg-gradient-to-r from-light-blue to-dark-blue bg-clip-text font-extrabold uppercase text-transparent dark:from-light-yellow dark:to-dark-yellow">
+                        <a href={github}>github</a>
+                      </h2>
+                    )}
+                  </div>
+                )}
                 {(next || prev) && (
                   <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
                     {prev && (
@@ -91,7 +106,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                   className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                   aria-label="Back to the blog"
                 >
-                  &larr; back to all Notes
+                  to all Notes
                 </Link>
               </div>
             </footer>
