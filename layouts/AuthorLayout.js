@@ -16,7 +16,7 @@ Experience.propTypes = {
   url: PropTypes.any,
 }
 export default function AuthorLayout({ children, content }) {
-  const { name, avatar, occupation, company, email, twitter, linkedin, github } = content
+  const { name, avatar, occupation, company, email, twitter, linkedin, github, web } = content
   return (
     <>
       <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
@@ -40,6 +40,7 @@ export default function AuthorLayout({ children, content }) {
             <div className="text-gray-500 dark:text-gray-400">{company}</div>
             <div className="flex space-x-3 pt-6">
               <SocialIcon kind="mail" href={`mailto:${email}`} />
+              <SocialIcon kind="web" href={web} />
               <SocialIcon kind="github" href={github} />
               <SocialIcon kind="linkedin" href={linkedin} />
               <SocialIcon kind="twitter" href={twitter} />
