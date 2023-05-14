@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { kebabCase } from 'pliny/utils/kebabCase'
 const Tag = ({ text }) => {
   return (
     <Link
