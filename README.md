@@ -1,4 +1,4 @@
-![Logo](https://github.com/LennardZuendorf/ignitus/blob/main/public/github/ignitr.png)
+<img src="https://ignitr.tech/static/favicons/mstile-150x150.png" alt= “Logo” width="150" height="150">
 
 <h1>Ignitus / ignitr.tech</h1>
 <h4>Ignitus is the repo for the ignitr.tech website, which showcases some of my personal tech projects.</h4> 
@@ -15,6 +15,8 @@
 
 <h2>🗳️ Status</h2>
 
+[![build next.js page](https://github.com/LennardZuendorf/ignitus/actions/workflows/nextjs.yml/badge.svg)](https://github.com/LennardZuendorf/ignitus/actions/workflows/nextjs.yml)
+![Vercel](https://vercelbadge.vercel.app/api/lennardzuendorf/ignitus)
 
 <h2>👨‍💻 Author and Credits</h2>
 
