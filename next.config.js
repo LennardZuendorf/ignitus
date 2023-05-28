@@ -66,26 +66,16 @@ module.exports = () => {
       dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
     },
     rewrites() {
-      return {
-        beforeFiles: [
-          {
-            source: '/',
-            has: [
-              {
-                type: 'host',
-                value: 'intepretor.ignitr.tech',
-              },
-            ],
-            destination: '/app/interpretor',
-          },
-        ],
-      }
-    },
     async redirects() {
       return [
         {
-          source: '/app/interpretor',
+          source: '/interpretor',
           destination: 'https://huggingface.co/spaces/LennardZuendorf/interpretor-app',
+          permanent: true,
+        },
+        {
+          source: '/nubes',
+          destination: '',
           permanent: true,
         },
       ]
