@@ -7,8 +7,8 @@ summary: Court case prediction application utilising 🤗 huggingface libaries, 
 website: https://ignitr.tech/legalis
 github: https://github.com/LennardZuendorf/legalis
 ---
-- end to end court case outcome prediction from facts ("sachverhalt") to tenor hosted on huggingface
-- using heavily processed German court case from OpenLegalData.io
+- project around court case prediction from facts to binary outcome and tenor
+- using heavily processed German court case data from OpenLegalData.io
 - **currently WIP**
 
 ### About the Project
@@ -17,12 +17,12 @@ Legalis is a University project for a machine learning and data science course. 
 I'm using bulk data from [openlegaldata](https:\\openlegaldata.io), which included about 250.000 cases, out of which ca. 38k are usable for me.
 
 ### Technology & Tools
-I very much enjoy all the features 🤗 huggingface provides and heavily rely on it in my machine learning projects. Especially the hosting of Dataset, Model and App. Additionally, I will use sckit-learn and the ChatGPT API.
+I very much enjoy all the features [🤗 huggingface](https://huggingface.co/) provides and heavily rely on it in my machine learning projects. Especially the hosting of Dataset, Model and Apps/Spaces. Additionally, I will use sckit-learn and the ChatGPT API.
 
-ChatGPT works great for the extraction of certain information from longer text (if you're willing to pay or have short texts). I planned to use it for processing 30tsd cases but that is quite pricey.
+ChatGPT works great for the extraction of certain information from longer text (if you're willing to pay or have short texts). I originally planned to use it for processing 30.000 cases, but that is quite pricey.
 
 ### Working Steps
-I had to do extensive preprocessing and cleaning of the data since the json dumps only provide the entire text in html format. After lots of work and cleaning I was able to extract 2800 cases to include a tenor (summary), reasoning and facts.
+I had to do extensive preprocessing and cleaning of the data since the json dumps only provide the entire text in html format. After lots of work and cleaning I was able to extract 2800 cases to include a tenor (summary), reasoning and facts. Because of ChatGPT pricing I cannot extract facts from the text of the other 30.000 cases (it does work though).
 
 This I will use to train to extract a binary ruling with ChatGPT and then train a sckit model to predict the outcome. We'll see about the accuracy of that.
 
