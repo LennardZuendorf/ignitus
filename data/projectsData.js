@@ -1,12 +1,18 @@
 const projectsData = [
   {
-    title: 'nubes',
-    description: `Idea for a modern dating app, with real location based dating. Built on Flutter with FlutterFlow.`,
-    imgSrc: '/static/images/twinkles/intro.jpg',
-    href: '/blog/nubes',
+    title: 'interpretor',
+    description: `Classifying hate speech with transformers and understanding it with XAI.`,
+    imgSrc: '/static/images/interpretor.png',
+    href: '/blog/interpretor',
   },
   {
-    title: 'habitus project',
+    title: 'legalis',
+    description: `Machine learning and data science around German court cases.`,
+    imgSrc: '/static/images/legalis.png',
+    href: '/blog/legalis',
+  },
+  {
+    title: 'habitus',
     description: `Showcase for a Java Spring backend, born out of a University Project. Personal training ground.`,
     imgSrc: '/static/images/habitus/intro.png',
     href: '/blog/habitus',
@@ -19,8 +25,8 @@ const projectsData = [
   },
   {
     title: 'ignitus',
-    description: `Idea for a modern dating app, with real location based dating. Built on Flutter with FlutterFlow.`,
-    imgSrc: '/static/images/twinkles/intro.jpg',
+    description: `This very website build on next.js and tailwindcss.`,
+    imgSrc: '/static/images/ignitus.png',
     href: '/blog/ignitus',
   },
   {
