@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { formatDate } from 'pliny/utils/formatDate'
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
@@ -6,7 +5,7 @@ import SectionContainer from '@/components/SectionContainer'
 import { BlogSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 export default function PostLayout({ content, next, prev, children }) {
-  const { path, slug, date, title } = content
+  const { path, date, title } = content
   return (
     <SectionContainer>
       <BlogSEO url={`${siteMetadata.siteUrl}/${path}`} {...content} />

@@ -65,27 +65,16 @@ module.exports = () => {
     eslint: {
       dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
     },
-    rewrites() {
-      return {
-        beforeFiles: [
-          {
-            source: '/',
-            has: [
-              {
-                type: 'host',
-                value: 'intepretor.ignitr.tech',
-              },
-            ],
-            destination: '/app/interpretor',
-          },
-        ],
-      }
-    },
     async redirects() {
       return [
         {
-          source: '/app/interpretor',
-          destination: 'https://huggingface.co/spaces/LennardZuendorf/interpretor-app',
+          source: '/interpretor',
+          destination: 'https://huggingface.co/spaces/LennardZuendorf/Interpretor',
+          permanent: true,
+        },
+        {
+          source: '/legalis',
+          destination: 'https://huggingface.co/spaces/LennardZuendorf/legalis',
           permanent: true,
         },
       ]

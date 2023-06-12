@@ -12,7 +12,7 @@ const postDateTemplate = {
   day: 'numeric',
 }
 export default function PostLayout({ content, authorDetails, next, prev, children }) {
-  const { filePath, path, slug, date, title, tags, website, github } = content
+  const { filePath, path, date, title, tags, website, github } = content
   const basePath = path.split('/')[0]
   return (
     <SectionContainer>
