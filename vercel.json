@@ -1,14 +1,14 @@
 {
   "rewrites": [
     {
-      "source": "/",
-      "destination": "https://main.d2ecge37493q5d.amplifyapp.com/",
+      "source": "/:path*",
       "has": [
         {
           "type": "host",
           "value": "radar.ignitr.tech"
         }
-      ]
+      ],
+      "destination": "https://main.d2ecge37493q5d.amplifyapp.com/"
     }
   ]
 }
